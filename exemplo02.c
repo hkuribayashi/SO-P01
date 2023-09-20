@@ -12,6 +12,7 @@ int main()
 
 	if (NULL == ptr) {
 		printf("arquivo nao pode ser aberto \n");
+		return 1;
 	}else{
 
 		printf("Conteudo do Arquivo: \n");
