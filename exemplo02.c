@@ -19,13 +19,11 @@ int main()
 
 		// Imprimindo o que esta escrito no arquivo,
 		// character by character using loop.
-		do {
-			ch = fgetc(ptr);
-			printf("%c", ch);
+		
+		int ch;
+    		while ((ch = fgetc(ptr)) != EOF)
+        		putchar(ch);
 
-			// Checando se o caracter é EOF.
-			// Se EOF pare a leitura.
-		} while (ch != EOF);
 	}
 	// Fechando o Arquivo
 	fclose(ptr);
